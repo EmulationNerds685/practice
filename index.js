@@ -34,6 +34,7 @@ res.render('submit.ejs',{date:current_date()})
 })
 app.post('/post', (req, res) => {
 console.log(req.body)
+var dustbin ="Hi there! Whats up?"
 })
 
 app.listen(port, () => {
