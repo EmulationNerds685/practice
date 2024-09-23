@@ -29,8 +29,10 @@ app.get('/', (req, res) => {
 	});
 })
 app.post('/date',(req,res)=>{
-	console.log(current_date())
-res.render('submit.ejs',{date:current_date()})
+	
+	var threat="You will be dead on:"
+	console.log(threat+" "+current_date())
+	res.render('submit.ejs',{date:current_date()})
 })
 app.post('/post', (req, res) => {
 console.log(req.body)
